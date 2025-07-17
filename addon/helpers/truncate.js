@@ -9,7 +9,9 @@ export function truncate([string, characterLimit = 140, useEllipsis = true]) {
   }
 
   if (string && string.length > limit) {
-    return useEllipsis ? `${string.substring(0, limit)}...` : string.substring(0, limit);
+    return useEllipsis
+      ? `${string.substring(0, limit)}...`
+      : string.substring(0, limit);
   } else {
     return string;
   }

@@ -4,10 +4,10 @@ import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 import { htmlSafe } from '@ember/template';
 
-module('Integration | Helper | {{trim}}', function(hooks) {
+module('Integration | Helper | {{trim}}', function (hooks) {
   setupRenderingTest(hooks);
 
-  test('It trim correctly', async function(assert) {
+  test('It trim correctly', async function (assert) {
     await render(hbs`{{trim " aa  "}}`);
 
     let expected = 'aa';
@@ -15,23 +15,27 @@ module('Integration | Helper | {{trim}}', function(hooks) {
     assert.dom('*').hasText(expected, 'trim string as expected');
   });
 
-  test('It correctly handles empty string input', async function(assert) {
+  test('It correctly handles empty string input', async function (assert) {
     await render(hbs`{{trim ""}}`);
 
     let expected = '';
 
-    assert.dom('*').hasText(expected, 'renders empty string if input is empty string');
+    assert
+      .dom('*')
+      .hasText(expected, 'renders empty string if input is empty string');
   });
 
-  test('It correctly handles undefined input', async function(assert) {
+  test('It correctly handles undefined input', async function (assert) {
     await render(hbs`{{trim undefined}}`);
 
     let expected = '';
 
-    assert.dom('*').hasText(expected, 'renders empty string if undefined input');
+    assert
+      .dom('*')
+      .hasText(expected, 'renders empty string if undefined input');
   });
 
-  test('It handles a SafeString', async function(assert) {
+  test('It handles a SafeString', async function (assert) {
     this.set('breakup', htmlSafe('  i need some space  '));
 
     await render(hbs`{{trim this.breakup}}`);

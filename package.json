@@ -32,14 +32,13 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
-    "node-test": "mocha test --recursive --reporter spec",
     "test:ember": "ember test",
     "test:ember-compatibility": "ember try:each"
   },
   "bugs": "https://github.com/adopted-ember-addons/ember-cli-string-helpers/issues",
   "homepage": "https://github.com/adopted-ember-addons/ember-cli-string-helpers",
   "dependencies": {
-    "broccoli-funnel": "^3.0.3",
+    "broccoli-funnel": "^3.0.8",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-htmlbars": "^6.2.0",
     "resolve": "^1.20.0"
@@ -65,7 +64,7 @@
     "ember-exam": "^5.0.1",
     "ember-load-initializers": "^2.1.2",
     "ember-page-title": "^7.0.0",
-    "ember-qunit": "^6.2.0",
+    "ember-qunit": "^7.0.0",
     "ember-resolver": "^10.0.0",
     "ember-source": "~4.12.0",
     "ember-source-channel-url": "^3.0.0",
@@ -79,7 +78,6 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-qunit": "^7.3.4",
     "loader.js": "^4.7.0",
-    "mocha": "^8.0.1",
     "prettier": "^2.8.7",
     "qunit": "^2.19.4",
     "qunit-dom": "^2.0.0",
