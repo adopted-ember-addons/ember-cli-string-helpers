@@ -48,9 +48,7 @@ module('Integration | Helper | {{underscore}}', function (hooks) {
 
     let expected = '';
 
-    assert
-      .dom()
-      .hasText(expected, 'renders empty string if undefined input');
+    assert.dom().hasText(expected, 'renders empty string if undefined input');
   });
 
   test('It handles a SafeString', async function (assert) {

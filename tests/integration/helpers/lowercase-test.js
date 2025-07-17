@@ -38,9 +38,7 @@ module('Integration | Helper | {{lowercase}}', function (hooks) {
 
     let expected = 'âêîôûäëïöüéàè';
 
-    assert
-      .dom()
-      .hasText(expected, 'converts accented characters to lowercase');
+    assert.dom().hasText(expected, 'converts accented characters to lowercase');
   });
 
   test('It correctly handles empty string input', async function (assert) {
@@ -58,9 +56,7 @@ module('Integration | Helper | {{lowercase}}', function (hooks) {
 
     let expected = '';
 
-    assert
-      .dom()
-      .hasText(expected, 'renders empty string if undefined input');
+    assert.dom().hasText(expected, 'renders empty string if undefined input');
   });
 
   test('It handles a SafeString', async function (assert) {

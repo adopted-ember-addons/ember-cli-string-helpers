@@ -102,8 +102,6 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = 'Choose an item color';
 
-    assert
-      .dom()
-      .hasText(expected, 'converts SafeString capitals to humanized');
+    assert.dom().hasText(expected, 'converts SafeString capitals to humanized');
   });
 });
