@@ -3,9 +3,15 @@
 
 String helpers for Ember. Extracted from the great [DockYard's ember-composable-helpers](https://github.com/DockYard/ember-composable-helpers/).
 
-To install:
+## Compatibility
 
-```no-highlight
+* Ember.js v4.4 or above
+* Ember CLI v4.4 or above
+* Node.js v14 or above
+
+## Installation
+
+```
 ember install ember-cli-string-helpers
 ```
 
@@ -205,6 +211,6 @@ See also: [Ember `w` documentation](https://api.emberjs.com/ember/release/classe
 * [ember-composable-helpers](https://github.com/dockyard/ember-composable-helpers)
 * [ember-truth-helpers](https://github.com/jmurphyau/ember-truth-helpers)
 
-## Legal
+## License
 
-[Licensed under the MIT license](http://www.opensource.org/licenses/mit-license.php)
+This project is licensed under the [MIT License](LICENSE.md).
