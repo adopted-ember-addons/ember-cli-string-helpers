@@ -11,6 +11,9 @@ importers:
       '@babel/core':
         specifier: ^7.28.0
         version: 7.28.0
+      ember-auto-import:
+        specifier: ^2.10.0
+        version: 2.10.0(webpack@5.100.2)
       ember-cli-babel:
         specifier: ^8.2.0
         version: 8.2.0(@babel/core@7.28.0)
@@ -31,8 +34,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0
       '@ember/string':
-        specifier: ^3.1.1
-        version: 3.1.1
+        specifier: ^4.0.1
+        version: 4.0.1
       '@ember/test-helpers':
         specifier: ^5.2.2
         version: 5.2.2(@babel/core@7.28.0)
@@ -51,9 +54,6 @@ importers:
       concurrently:
         specifier: ^9.2.0
         version: 9.2.0
-      ember-auto-import:
-        specifier: ^2.10.0
-        version: 2.10.0(webpack@5.100.2)
       ember-cli:
         specifier: ~5.12.0
         version: 5.12.0(handlebars@4.7.8)(underscore@1.13.7)
@@ -768,9 +768,8 @@ packages:
     resolution: {integrity: sha512-a1OQ+w9vDvMXd9BNA9r779yr8MAPguGaMGbIeTMPWACeWBdD6bACBB5iKE3gNyrJAYKMq2wab6BKmRFS3Qw3hw==}
     engines: {node: 10.* || 12.* || >= 14}
 
-  '@ember/string@3.1.1':
-    resolution: {integrity: sha512-UbXJ+k3QOrYN4SRPHgXCqYIJ+yWWUg1+vr0H4DhdQPTy8LJfyqwZ2tc5uqpSSnEXE+/1KopHBE5J8GDagAg5cg==}
-    engines: {node: 12.* || 14.* || >= 16}
+  '@ember/string@4.0.1':
+    resolution: {integrity: sha512-VWeng8BSWrIsdPfffOQt/bKwNKJL7+37gPFh/6iZZ9bke+S83kKqkS30poo4bTGfRcMnvAE0ie7txom+iDu81Q==}
 
   '@ember/test-helpers@5.2.2':
     resolution: {integrity: sha512-Cclqeh0j6RnYvoaElAVC3Nd1fsSUkc3oUTwTsLlNiC3riyPq8lNYxh96VM59/yji2ntrd/cJQ7qhhSZWd6hsEw==}
@@ -7125,11 +7124,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember/string@3.1.1':
-    dependencies:
-      ember-cli-babel: 7.26.11
-    transitivePeerDependencies:
-      - supports-color
+  '@ember/string@4.0.1': {}
 
   '@ember/test-helpers@5.2.2(@babel/core@7.28.0)':
     dependencies:
