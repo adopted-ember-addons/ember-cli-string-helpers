@@ -25,7 +25,7 @@ module('Integration | Helper | {{classify}}', function (hooks) {
 
   test('It converts spaces in strings correctly', async function (assert) {
     await render(
-      hbs`{{classify "age is foolish and forgetful when it underestimates youth"}}`
+      hbs`{{classify "age is foolish and forgetful when it underestimates youth"}}`,
     );
 
     let expected = 'AgeIsFoolishAndForgetfulWhenItUnderestimatesYouth';

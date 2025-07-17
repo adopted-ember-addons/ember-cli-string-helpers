@@ -25,7 +25,7 @@ module('Integration | Helper | {{dasherize}}', function (hooks) {
 
   test('It converts spaces to dashes', async function (assert) {
     await render(
-      hbs`{{dasherize "age is foolish and forgetful when it underestimates youth"}}`
+      hbs`{{dasherize "age is foolish and forgetful when it underestimates youth"}}`,
     );
 
     let expected = 'age-is-foolish-and-forgetful-when-it-underestimates-youth';

@@ -22,7 +22,7 @@ module('Integration | Helper | {{html-safe}}', function (hooks) {
     assert.deepEqual(
       find('h1').getAttribute('class').split(' ').sort(),
       ['error', 'has-error'].sort(),
-      'it has the correct CSS classes'
+      'it has the correct CSS classes',
     );
   });
 });

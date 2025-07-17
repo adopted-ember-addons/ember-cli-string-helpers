@@ -24,13 +24,13 @@ module('Integration | Helper | {{capitalize}}', function (hooks) {
       .dom()
       .hasText(
         expected,
-        'leaves capitalization when string is already capitalized'
+        'leaves capitalization when string is already capitalized',
       );
   });
 
   test('It correctly capitalizes an uncapitalized sentence', async function (assert) {
     await render(
-      hbs`{{capitalize "age is foolish and forgetful when it underestimates youth"}}`
+      hbs`{{capitalize "age is foolish and forgetful when it underestimates youth"}}`,
     );
 
     let expected = 'Age is foolish and forgetful when it underestimates youth';

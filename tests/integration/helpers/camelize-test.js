@@ -33,7 +33,7 @@ module('Integration | Helper | {{camelize}}', function (hooks) {
 
   test('It converts spaces to camelCase', async function (assert) {
     await render(
-      hbs`{{camelize "age is foolish and forgetful when it underestimates youth"}}`
+      hbs`{{camelize "age is foolish and forgetful when it underestimates youth"}}`,
     );
 
     let expected = 'ageIsFoolishAndForgetfulWhenItUnderestimatesYouth';

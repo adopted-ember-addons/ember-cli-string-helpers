@@ -25,7 +25,7 @@ module('Integration | Helper | {{underscore}}', function (hooks) {
 
   test('It converts spaces to underscores', async function (assert) {
     await render(
-      hbs`{{underscore "age is foolish and forgetful when it underestimates youth"}}`
+      hbs`{{underscore "age is foolish and forgetful when it underestimates youth"}}`,
     );
 
     let expected = 'age_is_foolish_and_forgetful_when_it_underestimates_youth';

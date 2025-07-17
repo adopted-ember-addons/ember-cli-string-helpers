@@ -9,7 +9,7 @@ module('Integration | Helper | {{truncate}}', function (hooks) {
 
   test('It truncates to 140 characters if no characterLimit is provided', async function (assert) {
     await render(
-      hbs`{{truncate "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit quam enim, in suscipit est rutrum id. Etiam vitae blandit purus, sed semper sem."}}`
+      hbs`{{truncate "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit quam enim, in suscipit est rutrum id. Etiam vitae blandit purus, sed semper sem."}}`,
     );
 
     let expected =
@@ -20,7 +20,7 @@ module('Integration | Helper | {{truncate}}', function (hooks) {
 
   test('It truncates to characterLimit provided', async function (assert) {
     await render(
-      hbs`{{truncate "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit quam enim, in suscipit est rutrum id. Etiam vitae blandit purus, sed semper sem." 20}}`
+      hbs`{{truncate "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit quam enim, in suscipit est rutrum id. Etiam vitae blandit purus, sed semper sem." 20}}`,
     );
 
     let expected = 'Lorem ipsum dolor...';
@@ -30,7 +30,7 @@ module('Integration | Helper | {{truncate}}', function (hooks) {
 
   test('It does not truncate if string is not longer than characterLimit', async function (assert) {
     await render(
-      hbs`{{truncate "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit quam enim, in suscipit est rutrum id." 140}}`
+      hbs`{{truncate "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit quam enim, in suscipit est rutrum id." 140}}`,
     );
 
     let expected =
@@ -41,7 +41,7 @@ module('Integration | Helper | {{truncate}}', function (hooks) {
 
   test('It truncates to characterLimit provided without an ellipsis if useEllipsis is false', async function (assert) {
     await render(
-      hbs`{{truncate "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit quam enim, in suscipit est rutrum id. Etiam vitae blandit purus, sed semper sem." 20 false}}`
+      hbs`{{truncate "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit quam enim, in suscipit est rutrum id. Etiam vitae blandit purus, sed semper sem." 20 false}}`,
     );
 
     let expected = 'Lorem ipsum dolor si';
@@ -55,8 +55,8 @@ module('Integration | Helper | {{truncate}}', function (hooks) {
     this.set(
       'sentence',
       htmlSafe(
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit quam enim, in suscipit est rutrum id. Etiam vitae blandit purus, sed semper sem.'
-      )
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit quam enim, in suscipit est rutrum id. Etiam vitae blandit purus, sed semper sem.',
+      ),
     );
 
     await render(hbs`{{truncate this.sentence 20}}`);

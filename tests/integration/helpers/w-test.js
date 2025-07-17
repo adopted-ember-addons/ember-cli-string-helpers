@@ -16,7 +16,7 @@ module('Integration | Helper | {{w}}', function (hooks) {
 
   test('It makes an array of many words', async function (assert) {
     await render(
-      hbs`{{#each (w "foo" "bar" "baz") as |word|}}{{word}}{{/each}}`
+      hbs`{{#each (w "foo" "bar" "baz") as |word|}}{{word}}{{/each}}`,
     );
     assert.dom().hasText('foobarbaz', 'the words are turned into an array');
   });
