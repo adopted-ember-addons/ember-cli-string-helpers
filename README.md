@@ -5,9 +5,9 @@ String helpers for Ember. Extracted from the great [DockYard's ember-composable-
 
 ## Compatibility
 
-* Ember.js v4.4 or above
+* Ember.js v3.28 or above
 * Ember CLI v4.4 or above
-* Node.js v14 or above
+* Node.js v20 or above
 
 ## Installation
 
