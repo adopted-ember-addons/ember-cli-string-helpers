@@ -16,6 +16,7 @@ module.exports = async function () {
             'ember-cli': '^4.12.0',
             'ember-exam': '^6.1.0',
             'ember-qunit': '^5.1.5',
+            'ember-resolver': '^10.0.0',
             'ember-source': '^3.28.0',
           },
         },
@@ -29,6 +30,7 @@ module.exports = async function () {
             'ember-cli': '^4.12.0',
             'ember-exam': '^6.1.0',
             'ember-qunit': '^5.1.5',
+            'ember-resolver': '^11.0.0',
             'ember-source': '~4.4.0',
           },
         },
@@ -39,6 +41,7 @@ module.exports = async function () {
           devDependencies: {
             '@ember/string': '^3.1.1',
             'ember-cli': '^4.12.0',
+            'ember-resolver': '^11.0.0',
             'ember-source': '~4.8.0',
           },
         },
