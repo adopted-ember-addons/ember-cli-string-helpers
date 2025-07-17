@@ -7,7 +7,7 @@ const replacement = ' ';
 // The substituted value will be contained in the result variable
 export function humanize([string]) {
   if (isHTMLSafe(string)) {
-    string = string.string;
+    string = string.toString();
   }
 
   if (string === undefined || string === null) {
