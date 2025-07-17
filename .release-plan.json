@@ -1,0 +1,22 @@
+{
+  "solution": {
+    "ember-cli-string-helpers": {
+      "impact": "major",
+      "oldVersion": "6.1.0",
+      "newVersion": "7.0.0",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "major",
+          "reason": "Appears in changelog section :boom: Breaking Change"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./package.json"
+    }
+  },
+  "description": "## Release (2025-07-17)\n\n* ember-cli-string-helpers 7.0.0 (major)\n\n#### :boom: Breaking Change\n* `ember-cli-string-helpers`\n  * [#363](https://github.com/adopted-ember-addons/ember-cli-string-helpers/pull/363) yarn -> pnpm, make @ember/string a peerDep ([@RobbieTheWagner](https://github.com/RobbieTheWagner))\n  * [#357](https://github.com/adopted-ember-addons/ember-cli-string-helpers/pull/357) Require ember >= 3.28, node >= 20, remove whitelist/blacklist ([@RobbieTheWagner](https://github.com/RobbieTheWagner))\n\n#### :house: Internal\n* `ember-cli-string-helpers`\n  * [#372](https://github.com/adopted-ember-addons/ember-cli-string-helpers/pull/372) Add release-plan ([@RobbieTheWagner](https://github.com/RobbieTheWagner))\n\n#### Committers: 1\n- Robbie Wagner ([@RobbieTheWagner](https://github.com/RobbieTheWagner))\n"
+}
