@@ -2,6 +2,17 @@
 
 ## Release (2025-07-17)
 
+* ember-cli-string-helpers 7.1.0 (minor)
+
+#### :rocket: Enhancement
+* `ember-cli-string-helpers`
+  * [#375](https://github.com/adopted-ember-addons/ember-cli-string-helpers/pull/375) Update @ember/string to v4 ([@RobbieTheWagner](https://github.com/RobbieTheWagner))
+
+#### Committers: 1
+- Robbie Wagner ([@RobbieTheWagner](https://github.com/RobbieTheWagner))
+
+## Release (2025-07-17)
+
 * ember-cli-string-helpers 7.0.0 (major)
 
 #### :boom: Breaking Change
