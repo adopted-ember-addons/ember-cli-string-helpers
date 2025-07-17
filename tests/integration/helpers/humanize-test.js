@@ -12,7 +12,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = 'Item color';
 
-    assert.dom('*').hasText(expected, 'converts underscored to humanized');
+    assert.dom().hasText(expected, 'converts underscored to humanized');
   });
 
   test('It converts dashes to spaces and capitalizes the first word', async function (assert) {
@@ -20,7 +20,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = 'Item color options';
 
-    assert.dom('*').hasText(expected, 'converts underscored to humanized');
+    assert.dom().hasText(expected, 'converts underscored to humanized');
   });
 
   test('It correctly handles single string input', async function (assert) {
@@ -28,7 +28,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = 'A';
 
-    assert.dom('*').hasText(expected, 'converts underscored to humanized');
+    assert.dom().hasText(expected, 'converts underscored to humanized');
   });
 
   test('It correctly handles empty string input', async function (assert) {
@@ -36,7 +36,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = '';
 
-    assert.dom('*').hasText(expected, 'converts underscored to humanized');
+    assert.dom().hasText(expected, 'converts underscored to humanized');
   });
 
   test('It correctly handles undefined input', async function (assert) {
@@ -44,7 +44,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = '';
 
-    assert.dom('*').hasText(expected, 'converts underscored to humanized');
+    assert.dom().hasText(expected, 'converts underscored to humanized');
   });
 
   test('It correctly handles capitalised input with spaces', async function (assert) {
@@ -52,7 +52,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = 'Choose an item color';
 
-    assert.dom('*').hasText(expected, 'converts capitals to humanized');
+    assert.dom().hasText(expected, 'converts capitals to humanized');
   });
 
   test('It correctly handles capitalised input with underscores', async function (assert) {
@@ -60,7 +60,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = 'Choose an item color';
 
-    assert.dom('*').hasText(expected, 'converts capitals to humanized');
+    assert.dom().hasText(expected, 'converts capitals to humanized');
   });
 
   test('It correctly handles capitalised input with dashes', async function (assert) {
@@ -68,7 +68,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = 'Choose an item color';
 
-    assert.dom('*').hasText(expected, 'converts capitals to humanized');
+    assert.dom().hasText(expected, 'converts capitals to humanized');
   });
 
   test('It correctly handles mixed-case input with spaces', async function (assert) {
@@ -76,7 +76,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = 'Choose an item color';
 
-    assert.dom('*').hasText(expected, 'converts capitals to humanized');
+    assert.dom().hasText(expected, 'converts capitals to humanized');
   });
 
   test('It correctly handles mixed-case input with underscores', async function (assert) {
@@ -84,7 +84,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = 'Choose an item color';
 
-    assert.dom('*').hasText(expected, 'converts capitals to humanized');
+    assert.dom().hasText(expected, 'converts capitals to humanized');
   });
 
   test('It correctly handles mixed-case input with dashes', async function (assert) {
@@ -92,7 +92,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
 
     let expected = 'Choose an item color';
 
-    assert.dom('*').hasText(expected, 'converts capitals to humanized');
+    assert.dom().hasText(expected, 'converts capitals to humanized');
   });
 
   test('It handles a SafeString', async function (assert) {
@@ -103,7 +103,7 @@ module('Integration | Helper | {{humanize}}', function (hooks) {
     let expected = 'Choose an item color';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'converts SafeString capitals to humanized');
   });
 });

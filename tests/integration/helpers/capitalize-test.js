@@ -12,7 +12,7 @@ module('Integration | Helper | {{capitalize}}', function (hooks) {
 
     let expected = 'Hi';
 
-    assert.dom('*').hasText(expected, 'capitalizes a single string');
+    assert.dom().hasText(expected, 'capitalizes a single string');
   });
 
   test('It leaves the capitalization unchanged with correctly capitalized string', async function (assert) {
@@ -21,7 +21,7 @@ module('Integration | Helper | {{capitalize}}', function (hooks) {
     let expected = 'Harry';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(
         expected,
         'leaves capitalization when string is already capitalized'
@@ -36,7 +36,7 @@ module('Integration | Helper | {{capitalize}}', function (hooks) {
     let expected = 'Age is foolish and forgetful when it underestimates youth';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'correctly capitalizes an uncapitalized sentence');
   });
 
@@ -46,7 +46,7 @@ module('Integration | Helper | {{capitalize}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if input is empty string');
   });
 
@@ -56,7 +56,7 @@ module('Integration | Helper | {{capitalize}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if undefined input');
   });
 
@@ -67,6 +67,6 @@ module('Integration | Helper | {{capitalize}}', function (hooks) {
 
     let expected = 'Hi';
 
-    assert.dom('*').hasText(expected, 'correctly capitalizes a SafeString');
+    assert.dom().hasText(expected, 'correctly capitalizes a SafeString');
   });
 });

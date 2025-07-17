@@ -12,7 +12,7 @@ module('Integration | Helper | {{underscore}}', function (hooks) {
 
     let expected = 'and_another';
 
-    assert.dom('*').hasText(expected, 'converts camelCase to underscored');
+    assert.dom().hasText(expected, 'converts camelCase to underscored');
   });
 
   test('It converts dashes to underscores', async function (assert) {
@@ -20,7 +20,7 @@ module('Integration | Helper | {{underscore}}', function (hooks) {
 
     let expected = 'harry_potter';
 
-    assert.dom('*').hasText(expected, 'converts dashes to underscores');
+    assert.dom().hasText(expected, 'converts dashes to underscores');
   });
 
   test('It converts spaces to underscores', async function (assert) {
@@ -30,7 +30,7 @@ module('Integration | Helper | {{underscore}}', function (hooks) {
 
     let expected = 'age_is_foolish_and_forgetful_when_it_underestimates_youth';
 
-    assert.dom('*').hasText(expected, 'converts spaces to underscores');
+    assert.dom().hasText(expected, 'converts spaces to underscores');
   });
 
   test('It correctly handles empty string input', async function (assert) {
@@ -39,7 +39,7 @@ module('Integration | Helper | {{underscore}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if input is empty string');
   });
 
@@ -49,7 +49,7 @@ module('Integration | Helper | {{underscore}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if undefined input');
   });
 
@@ -60,6 +60,6 @@ module('Integration | Helper | {{underscore}}', function (hooks) {
 
     let expected = 'harry_potter';
 
-    assert.dom('*').hasText(expected, 'correctly underscores a SafeString');
+    assert.dom().hasText(expected, 'correctly underscores a SafeString');
   });
 });

@@ -11,24 +11,24 @@ module('Integration | Helper | {{w}}', function (hooks) {
 
     await render(hbs`{{#each (w this.string) as |word|}}{{word}}{{/each}}`);
 
-    assert.dom('*').hasText('foobarbaz', 'the words are split');
+    assert.dom().hasText('foobarbaz', 'the words are split');
   });
 
   test('It makes an array of many words', async function (assert) {
     await render(
       hbs`{{#each (w "foo" "bar" "baz") as |word|}}{{word}}{{/each}}`
     );
-    assert.dom('*').hasText('foobarbaz', 'the words are turned into an array');
+    assert.dom().hasText('foobarbaz', 'the words are turned into an array');
   });
 
   test('You can even break up multiple strings of words', async function (assert) {
     await render(hbs`{{#each (w "foo bar" "baz") as |word|}}{{word}}{{/each}}`);
-    assert.dom('*').hasText('foobarbaz', 'the words are turned into an array');
+    assert.dom().hasText('foobarbaz', 'the words are turned into an array');
   });
 
   test('It gracefully handles empty arguments', async function (assert) {
     await render(hbs`{{#each (w) as |word|}}{{word}}{{/each}}`);
 
-    assert.dom('*').hasText('', 'is blank');
+    assert.dom().hasText('', 'is blank');
   });
 });

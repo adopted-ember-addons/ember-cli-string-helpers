@@ -14,7 +14,7 @@ module('Integration | Helper | {{titleize}}', function (hooks) {
 
     let expected = 'My Big Fat Greek Wedding';
 
-    assert.dom('*').hasText(expected, 'titleized value');
+    assert.dom().hasText(expected, 'titleized value');
   });
 
   test('It handles undefined', async function (assert) {
@@ -22,14 +22,14 @@ module('Integration | Helper | {{titleize}}', function (hooks) {
       {{titleize this.nostring}}
     `);
 
-    assert.dom('*').hasText('', 'No value');
+    assert.dom().hasText('', 'No value');
   });
 
   test('It handles null', async function (assert) {
     this.set('value', null);
     await render(hbs`{{titleize this.value}}`);
 
-    assert.dom('*').hasText('', 'No value');
+    assert.dom().hasText('', 'No value');
   });
 
   test('It handles a SafeString', async function (assert) {
@@ -39,6 +39,6 @@ module('Integration | Helper | {{titleize}}', function (hooks) {
 
     let expected = 'My Big Fat Greek Wedding';
 
-    assert.dom('*').hasText(expected, 'correctly titleizes a SafeString');
+    assert.dom().hasText(expected, 'correctly titleizes a SafeString');
   });
 });

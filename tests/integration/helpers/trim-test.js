@@ -12,7 +12,7 @@ module('Integration | Helper | {{trim}}', function (hooks) {
 
     let expected = 'aa';
 
-    assert.dom('*').hasText(expected, 'trim string as expected');
+    assert.dom().hasText(expected, 'trim string as expected');
   });
 
   test('It correctly handles empty string input', async function (assert) {
@@ -21,7 +21,7 @@ module('Integration | Helper | {{trim}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if input is empty string');
   });
 
@@ -31,7 +31,7 @@ module('Integration | Helper | {{trim}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if undefined input');
   });
 
@@ -42,6 +42,6 @@ module('Integration | Helper | {{trim}}', function (hooks) {
 
     let expected = 'i need some space';
 
-    assert.dom('*').hasText(expected, 'correctly trims a SafeString');
+    assert.dom().hasText(expected, 'correctly trims a SafeString');
   });
 });

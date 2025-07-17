@@ -12,7 +12,7 @@ module('Integration | Helper | {{camelize}}', function (hooks) {
 
     let expected = 'andAnother';
 
-    assert.dom('*').hasText(expected, 'maintains camelCase');
+    assert.dom().hasText(expected, 'maintains camelCase');
   });
 
   test('It converts underscores to camelCase', async function (assert) {
@@ -20,7 +20,7 @@ module('Integration | Helper | {{camelize}}', function (hooks) {
 
     let expected = 'harryPotter';
 
-    assert.dom('*').hasText(expected, 'converts underscores to camelCase');
+    assert.dom().hasText(expected, 'converts underscores to camelCase');
   });
 
   test('It converts dashes to camelCase', async function (assert) {
@@ -28,7 +28,7 @@ module('Integration | Helper | {{camelize}}', function (hooks) {
 
     let expected = 'harryPotter';
 
-    assert.dom('*').hasText(expected, 'converts dashes to camelCase');
+    assert.dom().hasText(expected, 'converts dashes to camelCase');
   });
 
   test('It converts spaces to camelCase', async function (assert) {
@@ -38,7 +38,7 @@ module('Integration | Helper | {{camelize}}', function (hooks) {
 
     let expected = 'ageIsFoolishAndForgetfulWhenItUnderestimatesYouth';
 
-    assert.dom('*').hasText(expected, 'correctly camelizes input with spaces');
+    assert.dom().hasText(expected, 'correctly camelizes input with spaces');
   });
 
   test('It correctly handles empty string input', async function (assert) {
@@ -47,7 +47,7 @@ module('Integration | Helper | {{camelize}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if input is empty string');
   });
 
@@ -57,7 +57,7 @@ module('Integration | Helper | {{camelize}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if undefined input');
   });
 
@@ -68,6 +68,6 @@ module('Integration | Helper | {{camelize}}', function (hooks) {
 
     let expected = 'harryPotter';
 
-    assert.dom('*').hasText(expected, 'correctly camelizes a SafeString');
+    assert.dom().hasText(expected, 'correctly camelizes a SafeString');
   });
 });

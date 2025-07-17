@@ -12,7 +12,7 @@ module('Integration | Helper | {{uppercase}}', function (hooks) {
 
     let expected = 'ALL LOWERCASE';
 
-    assert.dom('*').hasText(expected, 'converts all lowercase to uppercase');
+    assert.dom().hasText(expected, 'converts all lowercase to uppercase');
   });
 
   test('It converts mixed case to uppercase', async function (assert) {
@@ -21,7 +21,7 @@ module('Integration | Helper | {{uppercase}}', function (hooks) {
     let expected = 'UPPER AND LOWER CASE';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'converts upper and lower case to uppercase');
   });
 
@@ -30,7 +30,7 @@ module('Integration | Helper | {{uppercase}}', function (hooks) {
 
     let expected = 'SPECIAL @&/*-+^`';
 
-    assert.dom('*').hasText(expected, 'ignores special characters');
+    assert.dom().hasText(expected, 'ignores special characters');
   });
 
   test('It converts accented characters to uppercase', async function (assert) {
@@ -39,7 +39,7 @@ module('Integration | Helper | {{uppercase}}', function (hooks) {
     let expected = 'ÂÊÎÔÛÄËÏÖÜÉÀÈ';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'converts accented characters to uppercase');
   });
 
@@ -49,7 +49,7 @@ module('Integration | Helper | {{uppercase}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if input is empty string');
   });
 
@@ -59,7 +59,7 @@ module('Integration | Helper | {{uppercase}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if undefined input');
   });
 
@@ -71,7 +71,7 @@ module('Integration | Helper | {{uppercase}}', function (hooks) {
     let expected = 'NOOOOOOOO';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'converts all lowercase SafeString to uppercase');
   });
 });

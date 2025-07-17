@@ -12,7 +12,7 @@ module('Integration | Helper | {{classify}}', function (hooks) {
 
     let expected = 'AndAnother';
 
-    assert.dom('*').hasText(expected, 'classifies camelCased strings');
+    assert.dom().hasText(expected, 'classifies camelCased strings');
   });
 
   test('It converts underscored strings correctly', async function (assert) {
@@ -20,7 +20,7 @@ module('Integration | Helper | {{classify}}', function (hooks) {
 
     let expected = 'HarryPotter';
 
-    assert.dom('*').hasText(expected, 'classifies underscored strings');
+    assert.dom().hasText(expected, 'classifies underscored strings');
   });
 
   test('It converts spaces in strings correctly', async function (assert) {
@@ -30,7 +30,7 @@ module('Integration | Helper | {{classify}}', function (hooks) {
 
     let expected = 'AgeIsFoolishAndForgetfulWhenItUnderestimatesYouth';
 
-    assert.dom('*').hasText(expected, 'classifies strings with spaces');
+    assert.dom().hasText(expected, 'classifies strings with spaces');
   });
 
   test('It correctly handles empty string input', async function (assert) {
@@ -39,7 +39,7 @@ module('Integration | Helper | {{classify}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if input is empty string');
   });
 
@@ -49,7 +49,7 @@ module('Integration | Helper | {{classify}}', function (hooks) {
     let expected = '';
 
     assert
-      .dom('*')
+      .dom()
       .hasText(expected, 'renders empty string if undefined input');
   });
 
@@ -60,6 +60,6 @@ module('Integration | Helper | {{classify}}', function (hooks) {
 
     let expected = 'HarryPotter';
 
-    assert.dom('*').hasText(expected, 'correctly classifies a SafeString');
+    assert.dom().hasText(expected, 'correctly classifies a SafeString');
   });
 });
