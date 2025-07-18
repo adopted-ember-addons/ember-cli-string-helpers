@@ -17,6 +17,7 @@ module.exports = async function (defaults) {
 };
 
 export default {
+  packageManager: 'pnpm',
   scenarios: [
     {
       name: 'ember-lts-3.28',
