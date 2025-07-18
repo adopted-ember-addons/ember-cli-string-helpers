@@ -47,6 +47,7 @@ export default {
           '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
           'ember-auto-import': '^2.10.0',
+          'ember-cli': '^4.12.0',
           'ember-source': '~4.12.0',
         },
       },
