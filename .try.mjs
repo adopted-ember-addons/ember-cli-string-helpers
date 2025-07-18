@@ -24,7 +24,6 @@ export default {
         dependencies: {
           '@babel/core': '^7.28.0',
           'ember-auto-import': '^2.10.0',
-          'ember-cli-babel': '^8.2.0',
           'ember-cli-htmlbars': '^6.3.0',
         },
         devDependencies: {
@@ -37,6 +36,50 @@ export default {
           'ember-qunit': '^5.1.5',
           'ember-resolver': '^10.0.0',
           'ember-source': '^3.28.0',
+        },
+      },
+      env: {
+        ENABLE_COMPAT_BUILD: true,
+      },
+      files: compatFiles,
+    },
+    {
+      name: 'ember-lts-4.4',
+      npm: {
+        dependencies: {
+          '@babel/core': '^7.28.0',
+          'ember-auto-import': '^2.10.0',
+          'ember-cli-htmlbars': '^6.3.0',
+        },
+        devDependencies: {
+          '@embroider/compat': '^4.0.3',
+          '@ember/optional-features': '^2.2.0',
+          '@ember/string': '^3.1.1',
+          'ember-cli': '~4.4.0',
+          'ember-cli-htmlbars': '^6.3.0',
+          'ember-source': '~4.4.0',
+        },
+      },
+      env: {
+        ENABLE_COMPAT_BUILD: true,
+      },
+      files: compatFiles,
+    },
+    {
+      name: 'ember-lts-4.8',
+      npm: {
+        dependencies: {
+          '@babel/core': '^7.28.0',
+          'ember-auto-import': '^2.10.0',
+          'ember-cli-htmlbars': '^6.3.0',
+        },
+        devDependencies: {
+          '@embroider/compat': '^4.0.3',
+          '@ember/optional-features': '^2.2.0',
+          '@ember/string': '^3.1.1',
+          'ember-cli': '~4.8.0',
+          'ember-cli-htmlbars': '^6.3.0',
+          'ember-source': '~4.8.0',
         },
       },
       env: {
