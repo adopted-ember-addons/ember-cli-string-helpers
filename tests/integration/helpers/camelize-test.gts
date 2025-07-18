@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { htmlSafe } from '@ember/template';
 
-import camelize from 'ember-cli-string-helpers/helpers/camelize';
+import camelize from '#src/helpers/camelize.ts';
 
 module('Integration | Helper | {{camelize}}', function (hooks) {
   setupRenderingTest(hooks);

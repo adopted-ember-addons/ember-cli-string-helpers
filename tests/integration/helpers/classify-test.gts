@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { htmlSafe } from '@ember/template';
 
-import classify from 'ember-cli-string-helpers/helpers/classify';
+import classify from '#src/helpers/classify.ts';
 
 module('Integration | Helper | {{classify}}', function (hooks) {
   setupRenderingTest(hooks);

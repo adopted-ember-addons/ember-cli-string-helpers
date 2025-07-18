@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { htmlSafe } from '@ember/template';
 
-import uppercase from 'ember-cli-string-helpers/helpers/uppercase';
+import uppercase from '#src/helpers/uppercase.ts';
 
 module('Integration | Helper | {{uppercase}}', function (hooks) {
   setupRenderingTest(hooks);

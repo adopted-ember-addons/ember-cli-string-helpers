@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { htmlSafe } from '@ember/template';
 
-import underscore from 'ember-cli-string-helpers/helpers/underscore';
+import underscore from '#src/helpers/underscore.ts';
 
 module('Integration | Helper | {{underscore}}', function (hooks) {
   setupRenderingTest(hooks);

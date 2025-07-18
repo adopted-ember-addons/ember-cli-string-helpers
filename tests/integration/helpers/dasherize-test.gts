@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { htmlSafe } from '@ember/template';
 
-import dasherize from 'ember-cli-string-helpers/helpers/dasherize';
+import dasherize from '#src/helpers/dasherize.ts';
 
 module('Integration | Helper | {{dasherize}}', function (hooks) {
   setupRenderingTest(hooks);

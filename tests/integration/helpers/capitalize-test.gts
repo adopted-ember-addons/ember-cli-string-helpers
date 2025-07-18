@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { htmlSafe } from '@ember/template';
 
-import capitalize from 'ember-cli-string-helpers/helpers/capitalize';
+import capitalize from '#src/helpers/capitalize.ts';
 
 module('Integration | Helper | {{capitalize}}', function (hooks) {
   setupRenderingTest(hooks);

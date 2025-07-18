@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { htmlSafe } from '@ember/template';
 
-import truncate from 'ember-cli-string-helpers/helpers/truncate';
+import truncate from '#src/helpers/truncate.ts';
 
 module('Integration | Helper | {{truncate}}', function (hooks) {
   setupRenderingTest(hooks);

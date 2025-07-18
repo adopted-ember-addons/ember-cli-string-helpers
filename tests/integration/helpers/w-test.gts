@@ -2,7 +2,7 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 
-import w from 'ember-cli-string-helpers/helpers/w';
+import w from '#src/helpers/w.ts';
 
 module('Integration | Helper | {{w}}', function (hooks) {
   setupRenderingTest(hooks);

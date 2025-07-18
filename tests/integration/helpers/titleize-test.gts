@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { htmlSafe } from '@ember/template';
 
-import titleize from 'ember-cli-string-helpers/helpers/titleize';
+import titleize from '#src/helpers/titleize.ts';
 
 module('Integration | Helper | {{titleize}}', function (hooks) {
   setupRenderingTest(hooks);

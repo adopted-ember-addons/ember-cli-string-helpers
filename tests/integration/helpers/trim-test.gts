@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { htmlSafe } from '@ember/template';
 
-import trim from 'ember-cli-string-helpers/helpers/trim';
+import trim from '#src/helpers/trim.ts';
 
 module('Integration | Helper | {{trim}}', function (hooks) {
   setupRenderingTest(hooks);

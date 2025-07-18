@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 
-import titleize from 'ember-cli-string-helpers/utils/titleize';
+import titleize from '#src/utils/titleize.ts';
 
 module('Unit | Utility | titleize', function () {
   test('it titleizes a string', function (assert) {

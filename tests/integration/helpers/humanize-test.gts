@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { htmlSafe } from '@ember/template';
 
-import humanize from 'ember-cli-string-helpers/helpers/humanize';
+import humanize from '#src/helpers/humanize.ts';
 
 module('Integration | Helper | {{humanize}}', function (hooks) {
   setupRenderingTest(hooks);
