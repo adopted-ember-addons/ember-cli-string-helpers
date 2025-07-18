@@ -56,7 +56,7 @@ jobs:
           version: 10
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: package.json
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - name: "Generate Explanation and Prep Changelogs"
@@ -64,13 +64,11 @@ jobs:
         run: |
           set +e
           pnpm release-plan prepare 2> >(tee -a release-plan-stderr.txt >&2)
-
           if [ $? -ne 0 ]; then
             release_plan_output=$(cat release-plan-stderr.txt)
           else
             release_plan_output=$(jq .description .release-plan.json -r)
             rm release-plan-stderr.txt
-
             if [ $(jq '.solution | length' .release-plan.json) -eq 1 ]; then
               new_version=$(jq -r '.solution[].newVersion' .release-plan.json)
               echo "new_version=v$new_version" >> $GITHUB_OUTPUT
@@ -90,7 +88,5 @@ jobs:
           title: Prepare Release ${{ steps.explanation.outputs.new_version }}
           body: |
             This PR is a preview of the release that [release-plan](https://github.com/embroider-build/release-plan) has prepared. To release you should just merge this PR 👍
-
             -----------------------------------------
-
             ${{ steps.explanation.outputs.text }}
