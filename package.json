@@ -71,6 +71,7 @@
     "@babel/runtime": "^7.27.6",
     "@ember/app-tsconfig": "^1.0.3",
     "@ember/library-tsconfig": "^1.1.3",
+    "@ember/string": "^4.0.1",
     "@ember/test-helpers": "^5.2.2",
     "@embroider/addon-dev": "^8.1.0",
     "@embroider/compat": "^4.1.0",
