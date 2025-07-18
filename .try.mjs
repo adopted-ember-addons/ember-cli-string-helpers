@@ -21,14 +21,18 @@ export default {
     {
       name: 'ember-lts-3.28',
       npm: {
+        dependencies: {
+          '@babel/core': '^7.28.0',
+          'ember-auto-import': '^2.10.0',
+          'ember-cli-babel': '^8.2.0',
+          'ember-cli-htmlbars': '^6.3.0',
+        },
         devDependencies: {
           '@embroider/compat': '^4.0.3',
           '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
           '@ember/test-helpers': '^2.4.0',
-          'ember-auto-import': '^2.10.0',
           'ember-cli': '^4.12.0',
-          'ember-cli-htmlbars': '^6.3.0',
           'ember-exam': '^6.1.0',
           'ember-qunit': '^5.1.5',
           'ember-resolver': '^10.0.0',
@@ -43,11 +47,16 @@ export default {
     {
       name: 'ember-lts-4.12',
       npm: {
+        dependencies: {
+          '@babel/core': '^7.28.0',
+          'ember-auto-import': '^2.10.0',
+          'ember-cli-babel': '^8.2.0',
+          'ember-cli-htmlbars': '^6.3.0',
+        },
         devDependencies: {
           '@embroider/compat': '^4.0.3',
           '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
-          'ember-auto-import': '^2.10.0',
           'ember-cli': '^4.12.0',
           'ember-cli-htmlbars': '^6.3.0',
           'ember-source': '~4.12.0',
