@@ -22,7 +22,6 @@ export default {
       name: 'ember-lts-3.28',
       npm: {
         dependencies: {
-          '@babel/core': '^7.28.0',
           'ember-auto-import': '^2.10.0',
           'ember-cli-htmlbars': '^6.3.0',
         },
@@ -47,7 +46,6 @@ export default {
       name: 'ember-lts-4.4',
       npm: {
         dependencies: {
-          '@babel/core': '^7.28.0',
           'ember-auto-import': '^2.10.0',
           'ember-cli-htmlbars': '^6.3.0',
         },
@@ -68,7 +66,6 @@ export default {
       name: 'ember-lts-4.8',
       npm: {
         dependencies: {
-          '@babel/core': '^7.28.0',
           'ember-auto-import': '^2.10.0',
           'ember-cli-htmlbars': '^6.3.0',
         },
@@ -89,7 +86,6 @@ export default {
       name: 'ember-lts-4.12',
       npm: {
         dependencies: {
-          '@babel/core': '^7.28.0',
           'ember-auto-import': '^2.10.0',
           'ember-cli-htmlbars': '^6.3.0',
         },
