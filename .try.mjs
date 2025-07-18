@@ -16,22 +16,18 @@ module.exports = async function (defaults) {
   }),
 };
 
-const compatDeps = {
-  '@embroider/compat': '^4.0.3',
-  'ember-cli': '^5.12.0',
-  'ember-auto-import': '^2.10.0',
-  '@ember/optional-features': '^2.2.0',
-};
-
 export default {
   scenarios: [
     {
       name: 'ember-lts-3.28',
       npm: {
         devDependencies: {
+          '@embroider/compat': '^4.0.3',
+          '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
           '@ember/test-helpers': '^2.4.0',
-          'ember-cli': '^4.12.0',
+          'ember-auto-import': '^2.10.0',
+          'ember-cli': '^3.28.0',
           'ember-exam': '^6.1.0',
           'ember-qunit': '^5.1.5',
           'ember-resolver': '^10.0.0',
@@ -47,7 +43,10 @@ export default {
       name: 'ember-lts-4.12',
       npm: {
         devDependencies: {
+          '@embroider/compat': '^4.0.3',
+          '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
+          'ember-auto-import': '^2.10.0',
           'ember-source': '~4.12.0',
         },
       },
@@ -60,8 +59,11 @@ export default {
       name: 'ember-lts-5.8',
       npm: {
         devDependencies: {
+          '@ember/optional-features': '^2.2.0',
+          '@embroider/compat': '^4.0.3',
+          'ember-auto-import': '^2.10.0',
+          'ember-cli': '^5.12.0',
           'ember-source': '~5.8.0',
-          ...compatDeps,
         },
       },
       env: {
@@ -73,8 +75,11 @@ export default {
       name: 'ember-lts-5.12',
       npm: {
         devDependencies: {
+          '@ember/optional-features': '^2.2.0',
+          '@embroider/compat': '^4.0.3',
+          'ember-auto-import': '^2.10.0',
+          'ember-cli': '^5.12.0',
           'ember-source': '~5.12.0',
-          ...compatDeps,
         },
       },
       env: {
