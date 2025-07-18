@@ -27,7 +27,7 @@ export default {
           '@ember/string': '^3.1.1',
           '@ember/test-helpers': '^2.4.0',
           'ember-auto-import': '^2.10.0',
-          'ember-cli': '^3.28.0',
+          'ember-cli': '^4.12.0',
           'ember-exam': '^6.1.0',
           'ember-qunit': '^5.1.5',
           'ember-resolver': '^10.0.0',
