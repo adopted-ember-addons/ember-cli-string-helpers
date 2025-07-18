@@ -27,7 +27,7 @@ export default {
           'ember-cli-htmlbars': '^6.3.0',
         },
         devDependencies: {
-          '@embroider/compat': '^3.0.0',
+          '@embroider/compat': '^4.0.3',
           '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
           '@ember/test-helpers': '^2.4.0',
@@ -52,7 +52,7 @@ export default {
           'ember-cli-htmlbars': '^6.3.0',
         },
         devDependencies: {
-          '@embroider/compat': '^3.0.0',
+          '@embroider/compat': '^4.0.3',
           '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
           'ember-cli': '~4.4.0',
@@ -73,7 +73,7 @@ export default {
           'ember-cli-htmlbars': '^6.3.0',
         },
         devDependencies: {
-          '@embroider/compat': '^3.0.0',
+          '@embroider/compat': '^4.0.3',
           '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
           'ember-cli': '~4.8.0',
