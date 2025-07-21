@@ -27,7 +27,6 @@ export default {
           'ember-cli-htmlbars': '^6.3.0',
         },
         devDependencies: {
-          '@embroider/compat': '^4.0.3',
           '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
           'ember-cli': '^4.12.0',
@@ -48,7 +47,6 @@ export default {
           'ember-cli-htmlbars': '^6.3.0',
         },
         devDependencies: {
-          '@embroider/compat': '^4.0.3',
           '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
           'ember-cli': '~4.12.0',
@@ -68,7 +66,6 @@ export default {
           'ember-cli-htmlbars': '^6.3.0',
         },
         devDependencies: {
-          '@embroider/compat': '^4.0.3',
           '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
           'ember-cli': '~4.12.0',
@@ -88,7 +85,6 @@ export default {
           'ember-cli-htmlbars': '^6.3.0',
         },
         devDependencies: {
-          '@embroider/compat': '^4.0.3',
           '@ember/optional-features': '^2.2.0',
           '@ember/string': '^3.1.1',
           'ember-cli': '^4.12.0',
@@ -105,7 +101,6 @@ export default {
       npm: {
         devDependencies: {
           '@ember/optional-features': '^2.2.0',
-          '@embroider/compat': '^4.0.3',
           'ember-auto-import': '^2.10.0',
           'ember-cli': '^5.12.0',
           'ember-source': '~5.8.0',
@@ -121,7 +116,6 @@ export default {
       npm: {
         devDependencies: {
           '@ember/optional-features': '^2.2.0',
-          '@embroider/compat': '^4.0.3',
           'ember-auto-import': '^2.10.0',
           'ember-cli': '^5.12.0',
           'ember-source': '~5.12.0',
