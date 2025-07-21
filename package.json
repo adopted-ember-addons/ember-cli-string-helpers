@@ -108,7 +108,7 @@
     "testem": "^3.16.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.37.0",
-    "vite": "^6.3.5"
+    "vite": "^7.0.5"
   },
   "peerDependencies": {
     "@ember/string": ">= 3.1.1"
