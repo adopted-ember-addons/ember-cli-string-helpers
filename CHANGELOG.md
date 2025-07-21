@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-07-21)
+
+* ember-cli-string-helpers 8.0.0 (major)
+
+#### :boom: Breaking Change
+* `ember-cli-string-helpers`
+  * [#352](https://github.com/adopted-ember-addons/ember-cli-string-helpers/pull/352) Convert to the new v2 addon format and add TS types ([@aklkv](https://github.com/aklkv))
+
+#### Committers: 1
+- Alexey Kulakov ([@aklkv](https://github.com/aklkv))
+
 ## Release (2025-07-17)
 
 * ember-cli-string-helpers 7.1.0 (minor)
