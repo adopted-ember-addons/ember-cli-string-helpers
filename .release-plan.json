@@ -1,18 +1,18 @@
 {
   "solution": {
     "ember-cli-string-helpers": {
-      "impact": "major",
-      "oldVersion": "7.1.0",
-      "newVersion": "8.0.0",
+      "impact": "patch",
+      "oldVersion": "8.0.0",
+      "newVersion": "8.0.1",
       "tagName": "latest",
       "constraints": [
         {
-          "impact": "major",
-          "reason": "Appears in changelog section :boom: Breaking Change"
+          "impact": "patch",
+          "reason": "Appears in changelog section :bug: Bug Fix"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-07-21)\n\n* ember-cli-string-helpers 8.0.0 (major)\n\n#### :boom: Breaking Change\n* `ember-cli-string-helpers`\n  * [#352](https://github.com/adopted-ember-addons/ember-cli-string-helpers/pull/352) Convert to the new v2 addon format and add TS types ([@aklkv](https://github.com/aklkv))\n\n#### Committers: 1\n- Alexey Kulakov ([@aklkv](https://github.com/aklkv))\n"
+  "description": "## Release (2025-07-22)\n\n* ember-cli-string-helpers 8.0.1 (patch)\n\n#### :bug: Bug Fix\n* `ember-cli-string-helpers`\n  * [#379](https://github.com/adopted-ember-addons/ember-cli-string-helpers/pull/379) Update TS types, add warning and examples to README ([@aklkv](https://github.com/aklkv))\n\n#### Committers: 1\n- Alexey Kulakov ([@aklkv](https://github.com/aklkv))\n"
 }
