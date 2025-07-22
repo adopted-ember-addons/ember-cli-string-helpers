@@ -95,7 +95,7 @@ importers:
         version: 13.1.1
       ember-source:
         specifier: ^6.5.0
-        version: 6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
+        version: 6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
       ember-template-lint:
         specifier: ^7.9.1
         version: 7.9.1
@@ -2755,8 +2755,8 @@ packages:
     peerDependencies:
       '@glimmer/component': '>= 1.1.2'
 
-  ember-source@6.5.0:
-    resolution: {integrity: sha512-se8UFNu9n017VmKry124jc+Mh1ybZ8sAf9IthYYGpdPYH4PRLxBbxa+YEUdtu1vWoKZG2lVthtOUbCmIAjNrpQ==}
+  ember-source@6.6.0:
+    resolution: {integrity: sha512-Tmwt18cqDesjAmmvfshyrF4OZWBRhpRTUk5bpOuflh3qOWPJcASTMcktAx96lbqaL14TNpHGMaD5q3hur6Wj+A==}
     engines: {node: '>= 18.*'}
     peerDependencies:
       '@glimmer/component': '>= 1.1.2'
@@ -9172,7 +9172,7 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-source@6.5.0(@glimmer/component@2.0.0)(rsvp@4.8.5):
+  ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5):
     dependencies:
       '@babel/core': 7.28.0
       '@ember/edition-utils': 1.2.0
