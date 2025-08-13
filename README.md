@@ -53,9 +53,13 @@ ember install ember-cli-string-helpers
 
 Camelizes a string using `Ember.String.camelize`.
 
-```hbs
-{{camelize "hello jim bob"}}
-{{camelize stringWithDashes}}
+```gjs
+import { camelize } from 'ember-cli-string-helpers';
+
+<template>
+  {{camelize "hello jim bob"}}
+  {{camelize stringWithDashes}}
+</template>
 ```
 
 Output: `helloJimBob`
@@ -66,9 +70,13 @@ Output: `helloJimBob`
 
 Capitalizes a string using `Ember.String.capitalize`.
 
-```hbs
-{{capitalize "hello jim bob"}}
-{{capitalize fullName}}
+```gjs
+import { capitalize } from 'ember-cli-string-helpers';
+
+<template>
+  {{capitalize "hello jim bob"}}
+  {{capitalize fullName}}
+</template>
 ```
 
 Output: `Hello jim bob`
@@ -79,9 +87,13 @@ Output: `Hello jim bob`
 
 Classifies a string using `Ember.String.classify`.
 
-```hbs
-{{classify "hello jim bob"}}
-{{classify stringWithDashes}}
+```gjs
+import { classify } from 'ember-cli-string-helpers';
+
+<template>
+  {{classify "hello jim bob"}}
+  {{classify stringWithDashes}}
+</template>
 ```
 
 Output: `HelloJimBob`
@@ -110,15 +122,28 @@ Mark a string as safe for unescaped output with Ember templates using `Ember.Str
 {{html-safe unsafeString}}
 ```
 
+```gjs
+import { htmlSafe } from 'ember-cli-string-helpers';
+
+<template>
+  {{htmlSafe "<div>someString</div>"}}
+  {{htmlSafe unsafeString}}
+</template>
+```
+
 **[⬆️ back to top](#available-helpers)**
 
 #### `humanize`
 
 Removes dashes and underscores from a string, capitalizes the first letter and makes the rest of the string lower case.
 
-```hbs
-{{humanize "some-string"}}
-{{humanize phrase}}
+```gjs
+import { humanize } from 'ember-cli-string-helpers';
+
+<template>
+  {{humanize "some-string"}}
+  {{humanize phrase}}
+</template>
 ```
 
 Output: `Some string`
@@ -129,9 +154,13 @@ Output: `Some string`
 
 Lowercases a string.
 
-```hbs
-{{lowercase "People Person's Paper People"}}
-{{lowercase phrase}}
+```gjs
+import { lowercase } from 'ember-cli-string-helpers';
+
+<template>
+  {{lowercase "People Person's Paper People"}}
+  {{lowercase phrase}}
+</template>
 ```
 
 Output: `people person's paper people`
@@ -142,9 +171,13 @@ Output: `people person's paper people`
 
 Capitalizes every word separated by a white space or a dash.
 
-```hbs
-{{titleize "my big fat greek wedding"}}
-{{titleize phrase}}
+```gjs
+import { titleize } from 'ember-cli-string-helpers';
+
+<template>
+  {{titleize "my big fat greek wedding"}}
+  {{titleize phrase}}
+</template>
 ```
 
 Output: `My Big Fat Greek Wedding`
@@ -155,9 +188,13 @@ Output: `My Big Fat Greek Wedding`
 
 Trim a string.
 
-```hbs
-{{trim "  Lorem ipsum dolor sit amet, consectetur adipiscing elit.   "}}
-{{trim phrase}}
+```gjs
+import { trim } from 'ember-cli-string-helpers';
+
+<template>
+  {{trim "  Lorem ipsum dolor sit amet, consectetur adipiscing elit.   "}}
+  {{trim phrase}}
+</template>
 ```
 
 Output: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
@@ -166,9 +203,13 @@ Output: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
 
 Truncates a string with a characterLimit and optionally adds an ellipsis to the end.
 
-```hbs
-{{truncate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." 20 true}}
-{{truncate phrase characterLimit useEllipsis}}
+```gjs
+import { truncate } from 'ember-cli-string-helpers';
+
+<template>
+  {{truncate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." 20 true}}
+  {{truncate phrase characterLimit useEllipsis}}
+</template>
 ```
 
 Output: `Lorem ipsum dolor...`
@@ -179,9 +220,13 @@ Output: `Lorem ipsum dolor...`
 
 Underscores a string using `Ember.String.underscore`.
 
-```hbs
-{{underscore "whatsThat"}}
-{{underscore phrase}}
+```gjs
+import { underscore } from 'ember-cli-string-helpers';
+
+<template>
+  {{underscore "whatsThat"}}
+  {{underscore phrase}}
+</template>
 ```
 
 Output: `whats_that`
@@ -192,9 +237,13 @@ Output: `whats_that`
 
 Uppercases a string.
 
-```hbs
-{{uppercase "loud noises"}}
-{{uppercase phrase}}
+```gjs
+import { uppercase } from 'ember-cli-string-helpers';
+
+<template>
+  {{uppercase "loud noises"}}
+  {{uppercase phrase}}
+</template>
 ```
 
 Output: `LOUD NOISES`
@@ -205,21 +254,29 @@ Output: `LOUD NOISES`
 
 Splits a string on whitespace and/or turns multiple words into an array.
 
-```hbs
-{{#each (w "First" "Second" "Last") as |rank|}}
-  Our {{rank}} place winner is ...
-{{/each}}
+```gjs
+import { w } from 'ember-cli-string-helpers';
+
+<template>
+  {{#each (w "First" "Second" "Last") as |rank|}}
+    Our {{rank}} place winner is ...
+  {{/each}}
+</template>
 ```
 
 or:
 
-```hbs
-{{#each (w "First Second Last") as |rank|}}
-  Our {{rank}} place winner is ...
-{{/each}}
+```gjs
+import { w } from 'ember-cli-string-helpers';
+
+<template>
+  {{#each (w "First Second Last") as |rank|}}
+    Our {{rank}} place winner is ...
+  {{/each}}
+</template>
 ```
 
-See also: [Ember `w` documentation](https://api.emberjs.com/ember/release/classes/String/methods/w?anchor=w)
+See also: [Ember `w` documentation](https://api.emberjs.com/ember/4.9/classes/String/methods/w?anchor=w)
 
 **[⬆️ back to top](#available-helpers)**
 
@@ -254,7 +311,7 @@ import { camelize } from 'ember-cli-string-helpers';
 
 ## See also
 
-* [ember-composable-helpers](https://github.com/dockyard/ember-composable-helpers)
+* [ember-composable-helpers](https://github.com/NullVoxPopuli/ember-composable-helpers)
 * [ember-math-helpers](https://github.com/RobbieTheWagner/ember-math-helpers)
 * [ember-truth-helpers](https://github.com/jmurphyau/ember-truth-helpers)
 
