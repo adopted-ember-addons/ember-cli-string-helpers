@@ -1,5 +1,20 @@
 # Changelog
 
+## Release (2025-09-16)
+
+* ember-cli-string-helpers 8.1.0 (minor)
+
+#### :rocket: Enhancement
+* `ember-cli-string-helpers`
+  * [#400](https://github.com/adopted-ember-addons/ember-cli-string-helpers/pull/400) fix: remove named export from all helpers ([@aklkv](https://github.com/aklkv))
+
+#### :memo: Documentation
+* `ember-cli-string-helpers`
+  * [#402](https://github.com/adopted-ember-addons/ember-cli-string-helpers/pull/402) chore: update docs with imports ([@aklkv](https://github.com/aklkv))
+
+#### Committers: 1
+- Alexey Kulakov ([@aklkv](https://github.com/aklkv))
+
 ## Release (2025-07-22)
 
 * ember-cli-string-helpers 8.0.1 (patch)
