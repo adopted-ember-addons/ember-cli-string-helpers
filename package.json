@@ -1,0 +1,143 @@
+{
+  "name": "ember-cli-string-helpers",
+  "version": "8.0.1",
+  "description": "String helpers for Ember",
+  "keywords": [
+    "ember-addon",
+    "helpers",
+    "string helpers",
+    "strings"
+  ],
+  "homepage": "https://github.com/adopted-ember-addons/ember-cli-string-helpers",
+  "bugs": "https://github.com/adopted-ember-addons/ember-cli-string-helpers/issues",
+  "repository": "https://github.com/adopted-ember-addons/ember-cli-string-helpers",
+  "license": "MIT",
+  "author": "Lauren Tan <arr@sugarpirate.com>",
+  "contributors": [
+    "Marten Schilstra <mail@martenschilstra.nl>",
+    "Rômulo Machado <romulo.machado5@gmail.com>",
+    "Robbie Wagner <rwwagner90@gmail.com>"
+  ],
+  "imports": {
+    "#src/*": "./src/*"
+  },
+  "exports": {
+    ".": {
+      "types": "./declarations/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./*.css": "./dist/*.css",
+    "./*": {
+      "types": "./declarations/*.d.ts",
+      "default": "./dist/*.js"
+    },
+    "./addon-main.js": "./addon-main.cjs"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "declarations/*"
+      ]
+    }
+  },
+  "files": [
+    "addon-main.cjs",
+    "declarations",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup --config",
+    "format": "prettier . --cache --write",
+    "lint": "concurrently \"pnpm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
+    "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\" --prefixColors auto && pnpm run format",
+    "lint:format": "prettier . --cache --check",
+    "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
+    "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "lint:types": "glint",
+    "start": "vite dev",
+    "test": "vite build --mode=development --out-dir dist-tests && testem --file testem.cjs ci --port 0"
+  },
+  "dependencies": {
+    "@embroider/addon-shim": "^1.10.0",
+    "decorator-transforms": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/eslint-parser": "^7.28.0",
+    "@babel/plugin-transform-typescript": "^7.28.0",
+    "@babel/runtime": "^7.27.6",
+    "@ember/app-tsconfig": "^1.0.3",
+    "@ember/library-tsconfig": "^1.1.3",
+    "@ember/string": "^4.0.1",
+    "@ember/test-helpers": "^5.2.2",
+    "@embroider/addon-dev": "^8.1.0",
+    "@embroider/compat": "^4.1.0",
+    "@embroider/core": "^4.1.1",
+    "@embroider/macros": "^1.18.0",
+    "@embroider/vite": "^1.1.5",
+    "@eslint/js": "^9.31.0",
+    "@glimmer/component": "^2.0.0",
+    "@glint/core": "^2.0.0-alpha.3",
+    "@glint/environment-ember-loose": "^2.0.0-alpha.3",
+    "@glint/environment-ember-template-imports": "^2.0.0-alpha.3",
+    "@glint/template": "^1.6.0-alpha.2",
+    "@glint/tsserver-plugin": "^2.0.0-alpha.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@types/qunit": "^2.19.12",
+    "babel-plugin-ember-template-compilation": "^3.0.0",
+    "concurrently": "^9.2.0",
+    "ember-qunit": "^9.0.3",
+    "ember-resolver": "^13.1.1",
+    "ember-source": "^6.5.0",
+    "ember-template-lint": "^7.9.1",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-ember": "^12.6.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "^17.21.0",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-ember-template-tag": "^2.0.6",
+    "qunit": "^2.24.1",
+    "qunit-dom": "^3.4.0",
+    "release-plan": "^0.17.0",
+    "rollup": "^4.45.1",
+    "testem": "^3.16.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.37.0",
+    "vite": "^7.0.5"
+  },
+  "peerDependencies": {
+    "@ember/string": ">= 3.1.1"
+  },
+  "ember": {
+    "edition": "octane"
+  },
+  "ember-addon": {
+    "version": 2,
+    "type": "addon",
+    "main": "addon-main.cjs",
+    "app-js": {
+      "./helpers/camelize.js": "./dist/_app_/helpers/camelize.js",
+      "./helpers/capitalize.js": "./dist/_app_/helpers/capitalize.js",
+      "./helpers/classify.js": "./dist/_app_/helpers/classify.js",
+      "./helpers/dasherize.js": "./dist/_app_/helpers/dasherize.js",
+      "./helpers/html-safe.js": "./dist/_app_/helpers/html-safe.js",
+      "./helpers/humanize.js": "./dist/_app_/helpers/humanize.js",
+      "./helpers/lowercase.js": "./dist/_app_/helpers/lowercase.js",
+      "./helpers/titleize.js": "./dist/_app_/helpers/titleize.js",
+      "./helpers/trim.js": "./dist/_app_/helpers/trim.js",
+      "./helpers/truncate.js": "./dist/_app_/helpers/truncate.js",
+      "./helpers/underscore.js": "./dist/_app_/helpers/underscore.js",
+      "./helpers/uppercase.js": "./dist/_app_/helpers/uppercase.js",
+      "./helpers/w.js": "./dist/_app_/helpers/w.js"
+    }
+  },
+  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad",
+  "engines": {
+    "node": ">= 20",
+    "pnpm": ">= 10"
+  }
+}
